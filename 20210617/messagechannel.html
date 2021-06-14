@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Car(name) {
+            this.name = name;
+        }
+        Car.prototype.log = function(){
+            console.log(this.name)
+        }
+        let car = new Car('BMW')
+        let obj = {
+            name: 'xiaoming',
+            age: 18,
+            info: {
+                kills: ['js', 'vue'],
+                workYears: 5,
+            },
+            // say: function() {
+            //     console.log(5);
+            // },
+            reg: /^1$/,
+            a: undefined,
+            b: null,
+            car: car,
+            d: new Date()
+        };
+        function deepClone(obj) {
+            return new Promise(resolve => {
+                const {port1, port2} = new MessageChannel();
+                port1.onmessage = function(e) {
+                    resolve(e.data);
+                }
+                port2.postMessage(obj);
+            })
+        }
+        console.log(obj);
+        deepClone(obj).then(res => {
+            console.log(res);
+        })
+    </script>
+</body>
+</html>
