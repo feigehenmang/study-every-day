@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* iframe {
+            display: block;
+            width: 100%;
+            height: 5000px;
+            position: absolute;
+            top: 0;
+            left: 0; */
+            /* transform: translate(-50%, -50%); */
+        /* } */
+        div {
+            height: 5000px;
+            display: flex;
+        }
+        .add {
+            margin: auto;
+            height: 50px;
+            line-height: 50px;
+            width: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button class="add">Add</button>
+    </div>
+    <script>
+        const add = document.querySelector('.add');
+        console.log(add.getBoundingClientRect(), document.documentElement.scrollTop)
+        window.onscroll = () => {
+        console.log(add.getBoundingClientRect().top, document.documentElement.scrollTop)
+        }
+    </script>
+    <!-- <iframe src="./iframe.html" frameborder="0"></iframe> -->
+</body>
+</html>
