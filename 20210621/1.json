@@ -1,0 +1,146 @@
+[
+    {
+        "funcCode": "010703",
+        "funcName": "编辑",
+        "englishFuncName": "",
+        "funcType": 2
+    },
+    {
+        "funcCode": "01070301",
+        "funcName": "编辑",
+        "englishFuncName": "",
+        "funcType": 2
+    },
+    {
+        "funcCode": "01070302",
+        "funcName": "编辑",
+        "englishFuncName": "",
+        "funcType": 2
+    },
+    {
+        "funcCode": "010701",
+        "funcName": "新增",
+        "englishFuncName": "",
+        "funcType": 2
+    },
+    {
+        "funcCode": "010705",
+        "funcName": "重置密码",
+        "englishFuncName": "",
+        "funcType": 2
+    },
+    {
+        "funcCode": "01070501",
+        "funcName": "重置密码",
+        "englishFuncName": "",
+        "funcType": 2
+    },
+    {
+        "funcCode": "01070502",
+        "funcName": "重置密码",
+        "englishFuncName": "",
+        "funcType": 2
+    },
+    {
+        "funcCode": "010704",
+        "funcName": "注销",
+        "englishFuncName": "",
+        "funcType": 2
+    },
+    {
+        "funcCode": "0109",
+        "funcName": "临时授权",
+        "englishFuncName": "",
+        "funcType": 0
+    },
+    {
+        "funcCode": "0107",
+        "funcName": "用户管理",
+        "englishFuncName": "",
+        "funcType": 0
+    },
+    {
+        "funcCode": "0104",
+        "funcName": "角色管理",
+        "englishFuncName": "",
+        "funcType": 0
+    },
+    {
+        "funcCode": "0101",
+        "funcName": "机构管理",
+        "englishFuncName": "",
+        "funcType": 0
+    },
+    {
+        "funcCode": "010404",
+        "funcName": "注销",
+        "englishFuncName": "",
+        "funcType": 2
+    },
+    {
+        "funcCode": "010403",
+        "funcName": "编辑",
+        "englishFuncName": "",
+        "funcType": 2
+    },
+    {
+        "funcCode": "01040301",
+        "funcName": "编辑",
+        "englishFuncName": "",
+        "funcType": 2
+    },
+    {
+        "funcCode": "01040302",
+        "funcName": "编辑",
+        "englishFuncName": "",
+        "funcType": 2
+    },
+    {
+        "funcCode": "010401",
+        "funcName": "新增",
+        "englishFuncName": "",
+        "funcType": 2
+    },
+    {
+        "funcCode": "010901",
+        "funcName": "新增",
+        "englishFuncName": "",
+        "funcType": 2
+    },
+    {
+        "funcCode": "010904",
+        "funcName": "取消",
+        "englishFuncName": "",
+        "funcType": 2
+    },
+    {
+        "funcCode": "010903",
+        "funcName": "复制",
+        "englishFuncName": "",
+        "funcType": 2
+    },
+    {
+        "funcCode": "010902",
+        "funcName": "编辑",
+        "englishFuncName": "",
+        "funcType": 2
+    },
+    {
+        "funcCode": "010101",
+        "funcName": "新增",
+        "englishFuncName": "",
+        "funcType": 2
+    },
+    {
+        "funcCode": "010104",
+        "funcName": "注销",
+        "englishFuncName": "",
+        "funcType": 2
+    },
+    {
+        "funcCode": "010103",
+        "funcName": "编辑",
+        "englishFuncName": "",
+        "funcType": 2
+    }
+]
