@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script>
+        const drawImage = () => {
+            const canvas = document.querySelector('#canvas')
+            const context = canvas.getContext('2d')
+            const url = './1.jpg'
+            const image = new Image()
+            image.src = url
+            image.onload = () => {
+                const ratio = image.width / image.height
+                const height = window.innerWidth / ratio
+                canvas.width = window.innerWidth
+                canvas.height = height
+                context.drawImage(image, 0, 0, window.innerWidth, height)
+                const {data} = context.getImageData(0, 0, window.innerWidth, height)
+
+                var gap = 6;
+                context.fillStyle = '#fff'
+                context.clearRect(0,0,window.innerWidth, height)
+                for (var h = 0; h < height; h+=gap) {
+                    for(var w = 0; w < window.innerWidth; w+=gap){
+                            var position = (window.innerWidth * h + w) * 4;
+                            console.log(data[position])
+                            var r = data[position], g = data[position + 1], b = data[position + 2];
+                            console.log(r, g, b)
+                            if(r+g+b==0){
+                                ctx.fillStyle = "#000";
+                                ctx.fillRect(w,h,4,4);
+                            }
+                    }
+                }
+            }
+        }
+        drawImage()
+        document.body.onresize = () => {
+            drawImage()
+        }
+    </script>
+</body>
+</html>

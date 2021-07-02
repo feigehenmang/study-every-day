@@ -7,3 +7,4 @@
 ## 20210612 cli-commander
 ## 20210620 guide 用到的dom方法整理
 ## 20210624 vueuse 源码解析 useFullScreen onClickoutside
+## 20210702 canvas 点阵信息
