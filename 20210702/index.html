@@ -33,7 +33,7 @@
                 const {data} = context.getImageData(0, 0, window.innerWidth, height)
 
                 var gap = 6;
-                // context.fillStyle = '#fff'
+                context.fillStyle = '#fff'
                 context.clearRect(0,0,window.innerWidth, height)
                 for (var h = 0; h < height; h+=gap) {
                     for(var w = 0; w < window.innerWidth; w+=gap){
@@ -42,8 +42,8 @@
                             var r = data[position], g = data[position + 1], b = data[position + 2];
                             // console.log(r, g, b)
                             if(r+g+b==0){
-                                ctx.fillStyle = "#000";
-                                ctx.fillRect(w,h,4,4);
+                                context.fillStyle = "#000";
+                                context.fillRect(w,h,4,4);
                             }
                     }
                 }
